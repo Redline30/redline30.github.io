@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Equity</title>
+    <meta name="description" content="La humanidad te necesita." />
+    <meta name="author" content="Equity" />
+    <meta name="keywords" content="No al nuevo orden mundial." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favico.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <script src="https://kit.fontawesome.com/023feba2e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="mobile-menu-container">
+
+            <div class="mobile-menu wow fadeIn">
+                <div>
+                    <i class="fas fa-bars burgerbutton"></i>
+                </div>
+                <div class="menu-logo">
+                    <a href="#"><img id="small-logo" src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="menu-lenguages">
+                    <a href="#">ES <img class="flags" src="images/es.png" alt="" /></a>
+                </div>
+            </div>
+
+            <div class="menu-options-mobile">
+                <ol>
+                    <li> <a href="#home">Equidad</a> </li>
+                    <li> <a href="#skills">Estamos juntos</a> </li>
+                    <li> <a href="#projects">Noticias</a> </li>
+                </ol>
+            </div>
+
+        </div>
+
+        <nav class="menu wow fadeIn">
+            <div class="menu-logo">
+                <a href="#"><img id="small-logo" src="images/logom.png" alt="" /></a>
+            </div>
+            <div class="menu-options">
+                <ol>
+                    <li> <a href="#home">Equidad</a> </li>
+                    <li> <a href="#skills">Estamos juntos</a> </li>
+                    <li> <a href="#projects">Noticias</a> </li>
+                </ol>
+            </div>
+            <div class="menu-lenguages">
+                <a href="#">ES <img class="flags" src="images/es.png" alt="" /></a>
+            </div>
+        </nav>
+        <div class="socials">
+            <ol>
+                <li>
+                    <a class="dat fab fa-youtube" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="dat fab fa-telegram-plane" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="dat fab fa-instagram" target="_blank" href="#"></a>
+                </li>
+            </ol>
+        </div>
+
+    </header>
+
+    <div class="web-coint">
+
+        <section class="index" id="home">
+            <div class="about-container" id="aboutme">
+                <div class="about-perfil">
+                    <div class="perfil-container wow fadeIn">
+                        <img class="mainlogo" src="images/logo.png" alt="eye" />
+                        <h2 class="about-efec">Equidad</h2>
+                    </div>
+                </div>
+                <div class="about-description wow fadeIn">
+                    <div class="by-author">
+                        <p><strong class="strong">25. 05. 2020<br>COMUNIDAD</strong>
+                        </p>
+                    </div>
+                    <div class="view-cv">
+                        <a target="_blank" href="images/cv/cvitae.pdf"><img class=" small-eye " src="images/aboutme/eye.png" alt="eye" />Ver Presentación</a>
+                    </div>
+                </div>
+                <div class="about-info wow fadeIn">
+                    <div class="about-main-text">
+                        <p>
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+</body>
+
+<!-- WOW ANIMATION -->
+<script src=" script/wow.js ">
+</script>
+<script>
+    new WOW().init();
+</script>
+<!-- MOBILE MENU -->
+<script>
+    console.log(document.querySelector('.menu-options-mobile'));
+
+    const menum = document.querySelector('.menu-options-mobile');
+    console.log(menum);
+    const burger = document.querySelector('.burgerbutton');
+    console.log(burger);
+
+    burger.addEventListener('click', hideShow);
+
+    function hideShow() {
+        if (menum.classList.contains('is-active')) {
+            menum.classList.remove('is-active');
+        } else {
+            menum.classList.add('is-active');
+        }
+    }
+</script>
+
+</html>
